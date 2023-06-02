@@ -64,3 +64,4 @@ function sum() {
   let result = m1 + m2;
   document.getElementById("result").innerHTML = result;
 }
+//conf icon với chèn thẻ nội dung chu vi và diện tích
