@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- gg font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- my CSS  -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header>
+      <!-- place navbar here -->
+    </header>
+    <div class="container py-5">
+        <div class="card w-75 mx-auto">
+            <div class="bg_card d-none d-lg-block"></div>
+            <div class="card-body position-relative">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-2 nav-tabs nav flex-md-column nav-pills"
+                        id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link bt_tab mb-2 active " id="v-pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#bai1" type="button" role="tab" aria-controls="v-pills-home"
+                            aria-selected="true">Bài 1</button>
+                        <button class="nav-link bt_tab mb-2" id="v-pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#bai2" type="button" role="tab" aria-controls="v-pills-profile"
+                            aria-selected="false">Bài 2</button>
+                        <button class="nav-link bt_tab mb-2" id="v-pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#bai3" type="button" role="tab" aria-controls="v-pills-profile"
+                            aria-selected="false">Bài 3</button>
+                        <button class="nav-link bt_tab mb-2" id="v-pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#bai4" type="button" role="tab" aria-controls="v-pills-profile"
+                            aria-selected="false">Bài 4</button>
+                        <button class="nav-link bt_tab mb-2" id="v-pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#bai5" type="button" role="tab" aria-controls="v-pills-profile"
+                            aria-selected="false">Bài 5</button>
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-9 col-xl-10 tab-content" id="v-pills-tabContent">
+                        <div class=" note callout callout-warning">
+                            <i class="fa fa-exclamation text-danger fs-5 me-2"></i>
+                            <p class="d-inline "> <b>Đây chỉ là gợi ý nên người làm có thể làm khác gợi ý, miễn đúng theo yêu cầu trong file đề bài</b> </p>
+                        </div>
+                        <div class="tab-pane py-4 fade show active" id="bai1" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab">
+                            <h4 ><i class="fa fa-dollar-sign text-danger"></i> Tính tiền lương nhân viên</h4>
+                            <div class=" note callout callout-info ms-4">
+                                <p><i class="fa fa-lightbulb me-2 text-warning"></i><b>Gợi ý:</b>
+                                    <br>
+                                    Công thức: Lương = Lương 1 ngày * số ngày làm
+                                    <br>
+                                    Kiến thức áp dụng:
+                                <ul>
+                                    <li>Tìm tới thẻ và lấy giá trị</li>
+                                    <li>Tạo hàm cơ bản</li>
+                                    <li>Gắn sự kiện click cho button</li>
+                                    <li>Thay đổi nội dung cho thẻ</li>
+                                    <li>Xử lý load trang với button của form</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <form class="row gy-3 align-items-center px-2">
+                                <div class="col-12 col-lg-4">
+                                    <input type="number" class="form-control form_ip" id="ip-fee"
+                                        placeholder="Nhập lương một ngày">
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <input type="number" class="form-control form_ip" id="ip-day"
+                                        placeholder="Số ngày làm">
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn bt_feature me-1 mb-1" type="button" onclick="totalSalary()">Tính
+                                        lương</button>
+                                </div>
+                                <div class="alert alert-success" role="alert">
+                                    <i class="fa fa-hand-point-right text-danger fw-bold fs-5"></i>
+                                    <span id="totalSlr"></span>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane py-4 fade" id="bai2" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <h4 ><i class="fa fa-calculator text-success"></i> Tính giá trị trung bình</h4>
+                            <div class="note callout callout-info ms-4">
+                                <p><i class="fa fa-lightbulb me-2 text-warning"></i><b>Gợi ý:</b>
+                                    <br>
+                                    Kiến thức áp dụng:
+                                <ul>
+                                    <li>Tìm tới thẻ và lấy giá trị</li>
+                                    <li>Tạo hàm cơ bản</li>
+                                    <li>Gắn sự kiện click cho button</li>
+                                    <li>Thay đổi nội dung cho thẻ</li>
+                                    <li>Xử lý load trang với button của form</li>
+                                    <li>Xử lý ép kiểu dữ liệu</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <form class="row gy-3 align-items-center px-2 bai2">
+                                <div class="col-12 col-lg-4">
+                                    <input type="number" class="form-control form_ip" id="number1"
+                                        placeholder="Nhập số thứ 1">
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <input type="number" class="form-control form_ip" id="number2"
+                                        placeholder="Nhập số thứ 2">
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <input type="number" class="form-control form_ip" id="number3"
+                                        placeholder="Nhập số thứ 3">
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <input type="number" class="form-control form_ip" id="number4"
+                                        placeholder="Nhập số thứ 4">
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <input type="number" class="form-control form_ip" id="number5"
+                                        placeholder="Nhập số thứ 5">
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn bt_feature me-1 mb-1" type="button"  onclick="average()">Tính trung
+                                        bình</button>
+                                </div>
+                                <div class="alert alert-success" role="alert">
+                                  <i class="fa fa-hand-point-right text-danger fw-bold fs-5"></i><span id="average"></span>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane py-4 fade" id="bai3" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <h4 > <i class="fa fa-money-bill-wave text-danger me-2"></i> Quy đổi tiền</h4>
+                            <div class=" note callout callout-info ms-4">
+                                <p><i class="fa fa-lightbulb me-2 text-warning"></i><b>Gợi ý:</b>
+                                    <br>
+                                    Kiến thức áp dụng:
+                                <ul>
+                                    <li>Áp dụng các kiến thức như bài 1 và 2</li>
+                                    <li>Giá USD mặc định 1 USD = 23500</li>
+                                    <li>Có thể dùng thêm NumberFormat để số tiền hiển thị đẹp hơn: <a
+                                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat"
+                                            target="_blank">NumberFormat</a>
+                                        <br>
+                                        VD: new Intl.NumberFormat('vn-VN').format(23500); => 23,500
+                                    </li>
+                                </ul>
+                                </p>
+                            </div>
+                            <form class="row gy-3 align-items-center px-2">
+                                <div class="col-12 col-lg-4">
+                                    <input type="number" class="form-control form_ip" id="exMoney"
+                                         placeholder="Nhập số tiền USD">
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn bt_feature me-1 mb-1" onclick="changeDollar()" type="button">Quy đổi
+                                        tiền</button>
+                                </div>
+                                <div class="alert alert-success" role="alert">
+                                  <i class="fa fa-hand-point-right text-danger fw-bold fs-5"></i><span id="totalMoney" ></span>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane py-4 fade" id="bai4" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <h4 ><i class="fa fa-pencil-ruler me-2 text-secondary"></i>Tính diện tích, chu vi hình chữ nhật</h4>
+                            <div class="note callout callout-info ms-4">
+                                <p><i class="fa fa-lightbulb me-2 text-warning"></i><b>Gợi ý:</b>
+                                    <br>
+                                    Kiến thức áp dụng:
+                                <ul>
+                                    <li>Áp dụng các kiến thức như các bài trước</li>
+                                    <li>Diện tích: dài x rộng</li>
+                                    <li>Chu vi: (dài + rộng) x 2</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <form class="row gy-3 align-items-center px-2">
+                                <div class="col-12 col-lg-4">
+                                    <input type="number" class="form-control form_ip" id="length" 
+                                        placeholder="Nhập chiều dài">
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <input type="number" class="form-control form_ip" id="width" 
+                                        placeholder="Nhập chiều rộng">
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn bt_feature me-1 mb-1" type="button" onclick="size()">Tính</button>
+                                </div>
+                                <div class="alert alert-success" role="alert">
+                                  <i class="fa fa-hand-point-right text-danger fw-bold fs-5"></i>
+                                  <span id="acreage" ></span> 
+                                  <span id="perimeter"></span>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane py-4 fade" id="bai5" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <h4 ><i class="fa fa-th me-2 text-danger"></i> Tính tổng 2 ký số</h4>
+                            <div class="note callout callout-info ms-4">
+                                <p><i class="fa fa-lightbulb me-2 text-warning"></i><b>Gợi ý:</b>
+                                    <br>
+                                    Kiến thức áp dụng:
+                                <ul>
+                                    <li>Áp dụng cách tính như demo tổng 3 ký số trên lớp</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <form class="row gy-3 align-items-center px-2">
+                                <div class="col-12 col-lg-4">
+                                    <input type="number" class="form-control form_ip" id="number "
+                                        placeholder="Nhập số có 2 chữ số">
+                                </div>
+                                <div class="col-12">
+                                    <button onclick="sum" class="btn bt_feature me-1 mb-1" type="button" >Tính
+                                        tổng</button>
+                                </div>
+                                <div class="alert alert-success" role="alert">
+                                  <i class="fa fa-hand-point-right text-danger fw-bold fs-5"></i><span id="result" ></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    
+    <script src="./index.js"></script>
+  </body>
+</html>
