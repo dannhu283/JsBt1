@@ -28,7 +28,7 @@
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   color: #31344b;
 }
-.bt_tab::before .bt_feature {
+.bt_feature {
   background-color: #4b70e2;
   color: white;
   border-radius: 25px;
