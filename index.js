@@ -54,8 +54,10 @@ function size() {
   let width = +document.getElementById("width").value;
   let acreage = (length + width) * 2;
   let perimeter = length * width;
-  document.getElementById("acreage").innerHTML = acreage;
-  document.getElementById("perimeter").innerHTML = perimeter;
+  document.getElementById(
+    "titleCal"
+  ).innerHTML = ` <p>Chu Vi:${acreage} ---- Diện tích:${perimeter} </p>
+  `;
 }
 function sum() {
   let m = +document.getElementById("number").value;
@@ -64,4 +66,4 @@ function sum() {
   let result = m1 + m2;
   document.getElementById("result").innerHTML = result;
 }
-//conf icon với chèn thẻ nội dung chu vi và diện tích
+//conf icon
