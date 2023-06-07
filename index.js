@@ -56,7 +56,7 @@ function size() {
   let perimeter = length * width;
   document.getElementById(
     "titleCal"
-  ).innerHTML = ` <p>Chu Vi:${acreage} ---- Diện tích:${perimeter} </p>
+  ).innerHTML = ` <p>Chu Vi : ${acreage} ---- Diện tích : ${perimeter} </p>
   `;
 }
 function sum() {
