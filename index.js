@@ -19,19 +19,19 @@ function average() {
   let num5 = +document.getElementById("number5").value;
   let average = 0;
   let n = 0;
-  if (num1 > 0) {
+  if (num1 !== 0) {
     n++;
   }
-  if (num2 > 0) {
+  if (num2 !== 0) {
     n++;
   }
-  if (num3 > 0) {
+  if (num3 !== 0) {
     n++;
   }
-  if (num4 > 0) {
+  if (num4 !== 0) {
     n++;
   }
-  if (num5 > 0) {
+  if (num5 !== 0) {
     n++;
   }
   average = (num1 + num2 + num3 + num4 + num5) / n;
